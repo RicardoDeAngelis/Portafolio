@@ -1,0 +1,7 @@
+Conceptos elementales de Responsive Design
+
+Para abordar el campo del Responsive Design es necesario que tengas claridad sobre algunos conceptos básicos.
+
+Por este motivo, durante esta clase aprenderás qué es el Responsive Design, cuáles son los lenguajes de programación que lo hacen posible, qué medidas son necesarias aplicar para lograr que tus proyectos se adapten a pantallas de diversas medidas y condiciones, cuáles son los principios del Responsive Design (mostly fluid, colocación de columnas, layout shifter, tiny tweaks, off canvas).
+
+Finalmente, aprenderás el objetivo principal del Responsive Design: la óptima visualización de las web sites en cualquier dispositivo y podrás tener referentes en www.mediaqueri.es .
