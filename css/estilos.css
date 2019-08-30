@@ -211,7 +211,7 @@ valores */
 
 body {
   /* fuente todo se heredara a sus hijos */
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Source Sans Pro',system-ui;
     margin:0;
   }
   
@@ -221,7 +221,7 @@ body {
   h4,
   h5,
   h6{
-    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Fjalla One',system-ui;
     /* peso de fuente desde 400( palabra clave normal)a 900 */
     font-weight: normal;
     /* font-style: italic;  stylos de fuentes*/
@@ -238,6 +238,7 @@ body {
     color: white;
     /* todos los margenes: top, right, botton, left */
     margin: 0;
+    max-width: 500px;
     /* margin: 100px 150px 70px 30px; */
     /* text-transform: uppercase; tranformar letras*/
     /* text-decoration: dashed;  decorar texto (underline-subrallado)*/
@@ -249,7 +250,7 @@ body {
   h2 {
     color: #026fff;
     text-transform: uppercase;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Source Sans Pro',system-ui;
     font-weight: bold;
     font-size: 24px;
     margin-bottom: 40px;
@@ -323,7 +324,7 @@ body {
     font-size: 20px;
   }
   .project strong {
-    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Fjalla One',system-ui;
   }
   /* .project-date {
     margin: 10px 0;
@@ -536,7 +537,7 @@ body {
   }
   
   .form-email h3 { 
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Source Sans Pro',system-ui;
   }
   
   .container {
