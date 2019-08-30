@@ -47,3 +47,11 @@ absolute: Se sale del elemento en el que se encontraba originalmente y se ubica 
 fixed: Se queda fijo en un lugar especifico del viewport que se le indique.
 
 sticky: Permanece en un lugar asignado y cuando se hace scroll se queda fijo en un lugar en especifico hasta que se haga scroll contrario.
+
+Fuentes de iconos
+
+Todo menú necesita de la presencia de iconos, por este motivo, en esta clase aprenderás sobre las fuentes de iconos y las aplicarás en la realización del menú de tu proyecto.
+
+En este abordaje a las fuentes de iconos, conocerás la plataforma icomoon.io, en ella podrás importar o añadir familias de iconos, desde tu computador o desde el sistema.
+
+Posteriormente, llevarás los archivos que selecciones a tu editor de código, allí trabajarás sobre ellos con la etiqueta @font- face, que acogerá a otros atributos como font- family, font- style y font- weigth, font- variant, entre otras.
