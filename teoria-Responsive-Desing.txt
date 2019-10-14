@@ -15,7 +15,7 @@ En esta clase aprenderás qué es y cómo usar la etiqueta meta viewport, esta e
 Uno de los objetivos principales al usar esta etiqueta será que conserves la legibilidad de tu página web, al variar el escalado de tus contenidos.
 
 
-edidas relativas útiles en Responsive Design
+medidas relativas útiles en Responsive Design
 
 En esta clase aprenderás las medidas que existen en el campo del responsive design.
 
@@ -55,3 +55,6 @@ Todo menú necesita de la presencia de iconos, por este motivo, en esta clase ap
 En este abordaje a las fuentes de iconos, conocerás la plataforma icomoon.io, en ella podrás importar o añadir familias de iconos, desde tu computador o desde el sistema.
 
 Posteriormente, llevarás los archivos que selecciones a tu editor de código, allí trabajarás sobre ellos con la etiqueta @font- face, que acogerá a otros atributos como font- family, font- style y font- weigth, font- variant, entre otras.
+
+instalar el server node.js con: npm -g install static-server
+levanatar sever statico node con: static-server
