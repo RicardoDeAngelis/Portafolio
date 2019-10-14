@@ -1,66 +1,38 @@
-/*
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?ty4s1e');
+  src:  url('../fonts/icomoon.eot?ty4s1e#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?ty4s1e') format('truetype'),
+    url('../fonts/icomoon.woff?ty4s1e') format('woff'),
+    url('../fonts/icomoon.svg?ty4s1e#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
 
-display inline:acomoda los elementos en linea
-display block:acomoda los elementos en lista
-display  inline-blok:combina los los display
-display flex ,gred;mas modermo
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
 
-los estilos inline pesan mas que los estilos insertasdos por etiquetas styles y las eltiquetas styles y link 
-primero tomara la que este primero y sera pisada si es que hay otra igual
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
- reglas :
-selectores: como indentificar elementos html
-declaraciones:todo lo que hacemos con ese selector
-propiedades:propiedas particulares q podemos hacer con los elementos
-valores:cosas q se esperaran recibir como variables las propiedas para actuar de forma correcta
- */
-
- /* una regla es todo esto */
-/*header, header  es un selector, {*/
- /* el bloque de codigo es una declaracion,backgroun(color de fondo) es una propiedad, green es un valor  */
- /* green es una palabre clave para representar colores */
- /* background: green; */
-/* } */
-/* selector de etiqueta  header-section-article-nav*/
-/* selector descendente ->body->div->nav->ol->li->a */
-/* selector de clase(una clase es un atributo adentro html
- estas clases pueden ser atrinutis de distintas etiquetas)
- selectoir de  id(los elementos id son unicos dentro del webside se los llama con un nuemral (#) */
-/* el selector de clase se identifica con un  punto(.) */
-
-/* reglas
-selectores
-declaraciones
-propiedades
-valores */
-
-
-/* seletor de etiqueta  header - section - article - nav */
-/* header {
-  background: pink; color de fondo
-  color: red color de texto
-} */
-
-/* selector descendente  */
-/* body header div nav ol li a  */
-
-/* selector de clase . */
-
-/* .link */
-
-/* selector de id # */
-/* #portafolio */
+.icon-menu:before {
+  content: "\e900";
+}
 
 
 
-/* gris oscuro = #1d252c */
-/* gris claro = #626262 */
-/* background gris = #1b2127 */
-/* celeste = #026fff */
+
 
 body {
-  /* fuente todo se heredara a sus hijos */
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Source Sans Pro',system-ui;
     margin:0;
   }
   
@@ -70,10 +42,8 @@ body {
   h4,
   h5,
   h6{
-    font-family: 'Fjalla One', sans-serif;
-    /* peso de fuente desde 400( palabra clave normal)a 900 */
+    font-family: 'Fjalla One',system-ui;
     font-weight: normal;
-    /* font-style: italic;  stylos de fuentes*/
   }
   
   h1 {
@@ -87,18 +57,19 @@ body {
     color: white;
     /* todos los margenes: top, right, botton, left */
     margin: 0;
+    max-width: 500px;
     /* margin: 100px 150px 70px 30px; */
     /* text-transform: uppercase; tranformar letras*/
     /* text-decoration: dashed;  decorar texto (underline-subrallado)*/
   }
   /* color para las palabras en strong */
   h1 strong {
-    color: #026fff;
+    color: #026fff ;
   }
   h2 {
     color: #026fff;
     text-transform: uppercase;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Source Sans Pro',system-ui;
     font-weight: bold;
     font-size: 24px;
     margin-bottom: 40px;
@@ -108,12 +79,10 @@ body {
     height: 300px;
     /* background-image: url('../images/hero.jpg'); */
     background-color: #1b2127;
-    /* background-size: 500px 300px; tamaño a la imagen*/
-    /* background-repeat: no-repeat;  para que no se repitan las imagenes*/
-    /* background-position-x: right; colocar al lado derecho*/
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
   
   }
   
@@ -130,36 +99,19 @@ body {
   }
   
   .project {
-    /* border-top: 10px solid red; borde en la parte superior
-    border-right: 10px solid green borde derecho;
-    border-left: 10px solid orange borde izquierdo;
-    border-bottom: 10px solid pink; * borde inferior/
-    /* color: blue;  */
-    /* border-top-color: red borde completo;
-    border-top-width: 15px ancho;
-    border-top-style: solid;  estilo*/
-    /* border: me coloca un border completo al navegador */
     border: 1px solid gray;
     /* borde rendondeado */
     border-radius: 10px;
 
-    /* border-top-left-radius: 50px borde superior izquierda;
-    border-top-right-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px; */
-    /* margin: 10px; */
-
+  
     margin-bottom: 15px;
-    /* margin-right
-    margin-left 
-    margin-top */
-    /* padding para todos los lados(relleno) */
-    padding: 20px;
+   padding: 20px;
     background: #1b2127;
-    color:white;
+    color:white  ;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
   .project-course,
   .project-date,
@@ -170,7 +122,7 @@ body {
     font-size: 20px;
   }
   .project strong {
-    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Fjalla One',system-ui;
   }
   /* .project-date {
     margin: 10px 0;
@@ -184,13 +136,18 @@ body {
   
   /* le asignamos un tamaño al div de 500 px */
   .project-details {
-    width: 500px;
+    width: 50%;
   }
   
   /* le asignamos un tamaño a la imagen de 500 px */
   .project-imageContainer {
-    width: 500px;
+    width: 50%;
   }
+  .project-imageContainer img{
+    max-width: 100%;
+    
+  }
+
   
   .header {
     background-color: #1b2127;
@@ -200,6 +157,7 @@ body {
     height: 70px;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
   
   ol,
@@ -249,19 +207,20 @@ body {
     height: 50px;
     /* margen entre cajas */
     margin: 5px;
-    border: 1px solid red;
+    border: 1px solid red ;
   /* para que no se modifique los hijos */
     flex-shrink: 0;
   }
   
   .footer {
-    color: white;
+    color: white ;
     background-color: #1b2127;
     display: flex;
     /* centrar elementos */
     align-items: center;
     /* acomoda todas las cajas ,tambien espacio entre elementos */
     justify-content: space-between;
+    flex-wrap: wrap;
   }
   
   .footer img {
@@ -281,8 +240,8 @@ body {
     margin-left: 20px;
   }
   .event { 
-    margin: 10px;
-    width: 480px;
+    margin: 1%;
+    width: 48%;
     flex-shrink: 0;
     border-radius: 10px;
     /* genera scrolls */
@@ -319,22 +278,24 @@ body {
   .contact {
     background-color: #056fff;
     color: white;
-    height: 150px;
+    height: 200px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
   
- .social{
-   /* border:1px solid red; */
- }
-  
+  .social{
+    
+   }
+ 
   .social-link {
     display: inline-block;
     width: 50px;
     height: 50px;
     margin: 0 10px;
     background-size: 50px 50px;
+    
   }
   
   .social-link.twitter {
@@ -374,16 +335,255 @@ body {
   }
   
   .form-email h3 { 
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Source Sans Pro',system-ui;
   }
   
   .container {
     /* border: 1px solid red; */
-    width: 1000px;
+    max-width: 1000px;
+    flex:1;
     margin: 0 auto;
     display: inherit;
     justify-content: inherit;
     align-items: inherit;
     height: inherit;
     flex-wrap: inherit;
+  }
+  .burger-button{
+    width: 40px;
+    height: 40px;
+    border-radius:50%;
+    background-color:rgba(0,0,0,.8);
+    display:none; 
+   
+    /* otra manera */
+    line-height: 40px;
+    text-align: center;
+    /* boton flotante */
+    position: fixed;
+    /* por encima de todo */
+    z-index: 4;
+    /* espacios */
+    left: 5px;
+    top: 5px;
+    color: white;
+  }
+
+  /* desktop first hay que empezar primero desde el media query mas grande */
+
+  @media screen and (max-width: 1023px){
+  .portfolio{
+    padding: 0;
+  }
+    .container{
+      padding: 0 1em;
+    }
+    .hero{
+      height: auto;
+      position: relative;
+      overflow: hidden;
+      padding: 4em;
+
+    }
+  
+    .hero-image{
+      position: absolute;
+      z-index: 1;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+    }
+
+    h1{
+      font-size: 2em;
+      z-index: 2;
+    }
+    .html-video{
+      width: 100%;
+      height: auto;
+      /* max-width: 100%; */
+    }
+    .youtube-video{
+      position: absolute;
+      top:0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      
+    }
+    .flexible-video{
+      width: 100%;
+      height: 0;
+      padding-top:56.25%;
+      background: blue;
+      position: relative;
+
+    }
+  }
+  
+  @media screen and (max-width: 767px){
+    
+    .burger-button{
+      display: block;
+    }
+     
+    h2{
+      font-size: 1.1em;
+      margin: .5em 0;
+    }
+
+
+    
+    .header{
+      display: block;
+      height: auto;
+
+
+    }
+    
+   
+    .header ol {
+      display: block;
+
+    }
+    .header ol li{
+      height: 50px;
+    }
+    .header a{
+      justify-content: center;
+      height: 40px;
+      font-size: 2em;
+      text-decoration: underline;
+      margin-bottom: .5em;
+    }
+    .header .logo{
+      text-align: center;
+    }
+
+    .menu{
+      position:fixed;
+      background:rgba(5,111,255,.9);
+      z-index: 3;
+      top:0;
+      left: -100vw;
+      width: 100vw;
+      /* height: 100vh; */
+      bottom: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: 1s;
+      
+    }
+    .menu.is-active{
+      left: 0;
+    }
+
+    .project{
+      display: block;
+    }
+    .project-imageContainer{
+      width: auto;
+      text-align: center;
+    }
+    .project-details{
+      width: auto;
+      /* font-size: 10px; */
+
+
+    }
+    .project-course,.project-date,.project-url{
+      margin: .3em 0;
+    }
+    .project-title{
+      font-size: 1.5em;
+      margin-bottom: .3em;
+    }
+    .project-url{
+      font-size: 1em;
+    }
+    .project-course{
+      font-size: .8em;
+    }
+    .project-date{
+      font-size: 1em;
+    }
+    .project-description{
+      font-size: 1em;
+    }
+    .event{
+      width: auto;
+      flex-shrink: initial;
+    }
+    .event img{
+      width: 100%;
+    }
+    
+
+
+  }
+  @media screen and (max-width: 480px){
+
+    .social-link{
+      width: 40px;
+      height: 40px;
+      /* background-size:40px;  */
+      background-size: 100%;
+    }
+    h1{
+      font-size: 1.5em;
+    }
+    .project-details{
+      width: auto;
+      font-size: 14px;
+
+    }
+
+    .event-detail{
+      margin: -2em .5em .5em;
+      padding: 1em;
+    }
+
+    .contact{
+      height: auto;
+      padding: 1.5em 0;
+      text-align: center;
+      display: block;
+      
+
+    }
+    .form-email button{
+      margin: 1em auto;
+    }
+    .form-email h3{
+      margin-top: 0;
+    }
+    .footer{
+      display: block;
+      text-align: center;
+      border: 1px solid transparent;
+    }
+  
+  }
+
+  @media screen and (max-width: 320px){
+    h2{
+      font-size: 1.0em;
+      margin: .5em 0;
+    }
+
+    h1{
+      font-size: 1.2em;
+      background: rgba(0,0,0,.5);
+
+    }
+    .hero{
+      padding: 2em 1em;
+    }
+    
+
   }
