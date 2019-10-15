@@ -107,25 +107,10 @@ h2 {
 .project {
   display: flex;
   flex-wrap: wrap;
-  /* border-top: 10px solid red;
-  border-right: 10px solid green;
-  border-left: 10px solid orange;
-  border-bottom: 10px solid pink; */
-  /* color: blue; */
-  /* border-top-color: red;
-  border-top-width: 15px;
-  border-top-style: solid; */
   border: 1px solid gray;
   border-radius: 10px;
-  /* border-top-left-radius: 50px;
-  border-top-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px; */
-  /* margin: 10px; */
+ 
   margin-bottom: 15px;
-  /* margin-right
-  margin-left 
-  margin-top */
   padding: 20px;
   background: white;
   align-items: center;
@@ -142,10 +127,6 @@ h2 {
 .project strong {
   font-family: 'Fjalla One', sans-serif;
 }
-/* .project-date {
-  margin: 10px 0;
-} */
-
 .project-title {
   font-size: 30px;
   margin-top: 0;
@@ -208,9 +189,7 @@ figure {
 
 .flexbox {
   display: flex;
-  /* flex-wrap: nowrap; */
   flex-wrap: wrap;
-  /* flex-direction: column; */
 }
 
 .box {
@@ -359,7 +338,6 @@ figure {
 }
 
 .container {
-  /* border: 1px solid red; */
   max-width: 1000px;
   flex:1;
   margin: 0 auto;
@@ -373,7 +351,6 @@ figure {
   width: 100%;
   height: 0;
   padding-top: 56.25%;
-  /* background: blue; */
   position: relative;
 }
 .HTML-video {
@@ -514,7 +491,6 @@ figure {
     font-size: 16px;
   }
   .event-detail{
-    /* font-size: 16px; */
     margin: 2em .5em .5em;
     padding: 1em;
     z-index: 2;
@@ -544,6 +520,5 @@ figure {
   }
   .hero{
     padding: 2em 1em;
-    /* background: rgba(0, 0, 0, 0.5); */
   }
 }
